@@ -1,0 +1,58 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="420" viewBox="0 0 1200 420" role="img" aria-labelledby="title desc">
+  <title id="title">Skillium Learning Platform</title>
+  <desc id="desc">A blue product showcase banner for Skillium with an animated learning orbit and progress line.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#071D3B"/>
+      <stop offset=".52" stop-color="#0D4F82"/>
+      <stop offset="1" stop-color="#0BA9D8"/>
+    </linearGradient>
+    <linearGradient id="line" x1="0" x2="1">
+      <stop stop-color="#12D8C4"/>
+      <stop offset="1" stop-color="#7DE4FF"/>
+    </linearGradient>
+    <pattern id="grid" width="48" height="48" patternUnits="userSpaceOnUse">
+      <path d="M48 0H0V48" fill="none" stroke="#DDF7FF" stroke-opacity=".06"/>
+    </pattern>
+    <filter id="glow" x="-100%" y="-100%" width="300%" height="300%">
+      <feGaussianBlur stdDeviation="8" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+
+  <rect width="1200" height="420" rx="28" fill="url(#bg)"/>
+  <rect width="1200" height="420" rx="28" fill="url(#grid)"/>
+  <circle cx="1072" cy="72" r="150" fill="#6DE2FF" opacity=".08"/>
+  <circle cx="1050" cy="352" r="220" fill="#001B41" opacity=".22"/>
+
+  <g transform="translate(110 98)">
+    <circle cx="112" cy="112" r="94" fill="#0B2F5B" stroke="#73DFFF" stroke-opacity=".55" stroke-width="3"/>
+    <circle cx="112" cy="112" r="114" fill="none" stroke="#8FE8FF" stroke-opacity=".3" stroke-width="2" stroke-dasharray="10 18">
+      <animateTransform attributeName="transform" type="rotate" from="0 112 112" to="360 112 112" dur="18s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="112" cy="-2" r="7" fill="#12D8C4" filter="url(#glow)">
+      <animate attributeName="r" values="6;9;6" dur="1.8s" repeatCount="indefinite"/>
+    </circle>
+
+    <path d="M62 79 112 55l50 24-50 24Z" fill="#fff"/>
+    <path d="M75 94v54M98 91v72M121 91v72M144 94v54" stroke="#fff" stroke-width="12" stroke-linecap="round"/>
+    <path d="M61 168h102" stroke="#fff" stroke-width="10" stroke-linecap="round"/>
+    <path d="M151 79v38" stroke="#fff" stroke-width="5" stroke-linecap="round"/>
+    <circle cx="151" cy="122" r="5" fill="#12D8C4"/>
+  </g>
+
+  <g font-family="Inter, Segoe UI, Arial, sans-serif">
+    <text x="386" y="128" fill="#91E9FF" font-size="18" font-weight="700" letter-spacing="5">A+ LEARNING EXPERIENCE</text>
+    <text x="386" y="210" fill="#FFFFFF" font-size="72" font-weight="800">Skillium</text>
+    <text x="390" y="256" fill="#D8F5FF" font-size="25" font-weight="500">Learning, structured for progress.</text>
+    <text x="390" y="310" fill="#A9DCEA" font-size="16" letter-spacing="2">CURRICULA  •  COURSES  •  ASSESSMENTS  •  MEETINGS</text>
+  </g>
+
+  <rect x="390" y="350" width="600" height="6" rx="3" fill="#FFFFFF" opacity=".15"/>
+  <rect x="390" y="350" width="600" height="6" rx="3" fill="url(#line)">
+    <animate attributeName="width" values="0;600;600;0" keyTimes="0;.55;.9;1" dur="5s" repeatCount="indefinite"/>
+  </rect>
+  <circle cx="1030" cy="353" r="6" fill="#12D8C4" filter="url(#glow)">
+    <animate attributeName="opacity" values=".25;1;.25" dur="1.4s" repeatCount="indefinite"/>
+  </circle>
+</svg>
